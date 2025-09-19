@@ -7,4 +7,9 @@
 	- pitch-only
 	- noise-only
 	- reverb/fx only
-- 
+
+#### Different Pipeline Versions:
+- Simple linear Perturbations
+- naive random perturbations
+- section-aware perturbations
+- dynamic global perturbations (LFO-based)

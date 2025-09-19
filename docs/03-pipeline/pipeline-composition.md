@@ -1,5 +1,5 @@
 
-- perturbations are modular **pure** functions
+- perturbations are **modular pure** functions
 - perturbations are collected as **first class members** in lists
 	-> can be **passed** to composition-function ( **order of application** via dictionary or enum ) 
 	-> modular pipeline important for ablation studies

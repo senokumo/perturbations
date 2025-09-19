@@ -1,0 +1,4 @@
+- Feature variance comparison (tempo, rms, spectral)
+- Distribution similarity (KL div, Wasserstein)
+- Annotation consistency checks
+- Cross-validation with real live recordings

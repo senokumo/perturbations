@@ -1,4 +1,4 @@
-# Dynamically Section-Based
+# Dynamic, section-based approach
 ## Concept:
 
 -> *essentially a wrapper around librosa phase vocoder or pyrubberband*

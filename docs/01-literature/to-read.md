@@ -26,6 +26,7 @@
 ## Optimization
 - [Tree-Structured Parsen Estimator (Bayesian Optimization)](https://arxiv.org/pdf/2304.11127)
 - [Population Based Training Speech Data Augmentation](https://arxiv.org/abs/2010.03899)
+- [Practical Bayesian Optimization of Machine Learning Algorithms](https://arxiv.org/abs/1206.2944) 
 
 ## Evaluation
 - [Fréchet Audio Distance](https://www.isca-archive.org/interspeech_2019/kilgour19_interspeech.html)

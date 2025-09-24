@@ -1,13 +1,14 @@
+# Dynamically Section-Based
 ## Concept:
 
-- essentially a wrapper around librosa phase vocoder or pyrubberband
+-> *essentially a wrapper around librosa phase vocoder or pyrubberband*
 
 - is a function that 
-	takes 
+	**takes** 
 		audio (as waveform array + sample rate)
 		cue points 
 		sets of labeled warp functions  
-	returns 
+	**returns** 
 		warped audio 
 		warped cue points
 
@@ -33,5 +34,5 @@
 6. concatenate resulting warped sections
 
 
-optional enhancements:
+**optional enhancements:**
 	- random perturbation (global?) ontop of section based warping

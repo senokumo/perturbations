@@ -1,0 +1,6 @@
+- librosa
+- madmom
+- audiomentations
+- pedalboard
+- [beatnet](https://github.com/mjhydri/BeatNet)
+- [frechet audio](https://github.com/microsoft/fadtk)

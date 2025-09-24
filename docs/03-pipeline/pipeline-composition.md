@@ -1,8 +1,8 @@
 
 - perturbations are **modular pure** functions
 - perturbations are collected as **first class members** in lists
-	-> can be **passed** to composition-function ( **order of application** via dictionary or enum ) 
-	-> modular pipeline important for ablation studies
+	-> can be **passed** to composition-function ( **order of application** ensured via dictionary or enum ) 
+	-> modular pipeline crucial for ablation studies
 
 
 
@@ -45,13 +45,13 @@ class L,M evaluation
 
 ## Order of perturbation application
 
-1. any time-/warp-based perturbations
+1. time-/warp-based perturbations
 	else all other types of perturbations will also be stretched/compressed
 
-2. any type of perturbation that is dependent on the audio file
-	pitch shift, reverb/delay, eq, compression, dynamics (fade in/out, ..), 
+2. perturbations that are derived from audio
+	pitch shift, reverb/delay, eq, compression, dynamics
 
-3. all other that are independent
+3. independent perturbations
 	noise, distortions, artifacts
 
 ## Dynamic Implementation per perturbation

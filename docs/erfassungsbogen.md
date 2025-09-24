@@ -25,21 +25,21 @@ Der Zweck dieser Arbeit ist es zu untersuchen, wie man via Perturbationen die Ko
 
 Das Hauptziel dieser Arbeit ist die Entwicklung und Explorierung von Methoden zur Generierung synthetischer Audiodaten. 
 Diese basieren auf einer datengetriebenen Analyse echter Live-Aufnahmen und weisen daher messbar realistische Live-Performance-Charakteristika auf.
-Aus einer einzelnen annotierten Aufnahme werden also künstliche, robuste Trainingsdatensätze mit realitätsnaher Varianz generiert, welche voraussichtlich für zukünftige Arbeiten im Training spezialisierter Modelle verwendet werden können, als Basis eines Cue-Detection-Frameworks.
+Aus einer einzelnen annotierten Aufnahme werden also künstliche, robuste Trainingsdatensätze mit realitätsnaher Varianz generiert.
 
-Die Thesis soll im Wesentlichen drei Fragen beantworten:
+Die Thesis soll im Wesentlichen drei Fragen in dieser Reihenfolge beantworten:
 Wie unterscheiden sich verschiedene Live-Performances desselben Musikstücks in zeitlichen und spektralen Eigenschaften (Varianz)?
-Wie unterscheiden sich verschiedene Augmentationsansätze via Perturbationen darin, realistische Live-Performance-Charakteristika zu generieren? 
+Wie unterscheiden sich verschiedene Augmentationsansätze darin, realistische Live-Performance-Charakteristika zu generieren, welchen Einfluss haben sie auf die Qualität der erzeugten Daten? 
 Welche Ansätze können die statistischen Eigenschaften echter Live-Aufnahmen am besten reproduzieren?
 
 
 
 ## **Vorgehensweise**
 
-Anfangs findet eine Literaturrecherche und die Einarbeitung in relevanter Python-Libraries für Audio-Analyse und Perturbation statt.
+Anfangs findet eine Literaturrecherche und die Einarbeitung in relevante Python-Libraries für Audio-Analyse und Perturbation statt.
 Daraufhin wird die Varianz echter Live-Aufnahmen empirisch untersucht, indem relevante Audio-Features extrahiert, analysiert und verglichen werden. Die Ergebnisse werden als Zielwerte für die anschließende Implementierung unserer Perturbationsmethodiken dienen. 
 Für die Erstellung der künstlichen Datensätze wird eine modulare Pipeline entworfen, die es ermöglicht, gewählte Perturbationen anzuwenden und Features zu extrahieren.
-Dabei gilt es herauszufinden, welche Arten von Perturbationen und deren Intensitäten vorteilhaft für eine realistische Augmentation sind.
+Es gilt herauszufinden, welche Arten von Perturbationen und deren Intensitäten vorteilhaft für eine realistische Augmentation sind.
 Aufgrund des großen Hyperparameterraums werden für die Parameter-Optimierung wissenschaftlich fundierte Methoden hinsichtlich ihrer Eignung untersucht und evaluiert.
 Die Bewertung der Ergebnisse erfolgt primär durch Vergleich der Feature-Verteilungen zwischen augmentierten und echten Live-Aufnahmen.
 Ergänzend können weitere Metriken hinzugenommen werden, um die erzeugten Datensätze aus mehreren Perspektiven zu bewerten.
@@ -50,3 +50,11 @@ Die schriftliche Ausarbeitung der Arbeit erfolgt auf Englisch und umfasst nicht 
 Der Quellcode wird sachlich und sauber dokumentiert. 
 Die Ergebnisse der Arbeit werden im Rahmen einer Abschlusspräsentation mit anschließender Diskussion vor fachkundigem Publikum vorgestellt.
 
+## Literatur
+- [Effect of Sound Data Augmentation Methods](https://transactions.ismir.net/articles/10.5334/tismir.26)
+- [MUDA Software Framework Paper](https://brianmcfee.net/papers/ismir2015_augmentation.pdf)
+- [The Nature and Perception of Fluctuations in Human Musical Rhythms](https://pmc.ncbi.nlm.nih.gov/articles/PMC3202537/)
+- [Music Performance Analysis: A Survey](https://arxiv.org/abs/1907.00178)
+- [Tree-Structured Parsen Estimator (Bayesian Optimization)](https://arxiv.org/pdf/2304.11127)
+- [Fréchet Audio Distance](https://www.isca-archive.org/interspeech_2019/kilgour19_interspeech.html)
+- [Automated Data Augmentation for Audio Classification](https://dl.acm.org/doi/10.1109/TASLP.2024.3402049)

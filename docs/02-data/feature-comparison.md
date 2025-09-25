@@ -1,0 +1,6 @@
+
+| approach    | pros                                                                                                                     | cons                                       | conclusion                                                                       |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------ | -------------------------------------------------------------------------------- |
+| whole-track | capture overall performance differences (tempo drift, dynamics, spectral envelope).                                      | obscures local variation                   | overall variance analysis -> “macro” view of performance differences.            |
+| sections    | Captures precise variations per song section (verse, chorus, solo). Aligns with cue points. Allows targeted augmentation | Requires manual segmentation and alignment | Use for **feature-driven augmentation**, cue-aware modeling, and finer analysis. |
+| both        | macro and micro:<br>measure global consistency vs local variation.                                                       | more complex                               |                                                                                  |

@@ -1,4 +1,4 @@
-
+- [Effect of Sound Data Augmentation Methods](https://transactions.ismir.net/articles/10.5334/tismir.26) relevant!
 ## An Analysis of the Effect of Data Augmentation Methods: Experiments for a Musical Genre Classification Task
 
 ### Abstract

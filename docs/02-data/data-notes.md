@@ -1,1 +1,11 @@
 - [SALAMI annotated music dataset](https://github.com/DDMAL/salami-data-public)
+- [ASAP dataset classical music](https://github.com/fosfrancesco/asap-dataset)
+- [MAESTRO dataset classical music](https://magenta.withgoogle.com/datasets/maestro)
+- [rwc database](https://staff.aist.go.jp/m.goto/RWC-MDB/#intro)
+- [da-tacos dataset](https://github.com/MTG/da-tacos?tab=readme-ov-file)
+- [covers80 dataset](http://labrosa.ee.columbia.edu/projects/coversongs/covers80/)
+- [vienna 4x22 dataset classical music](https://github.com/CPJKU/vienna4x22?tab=readme-ov-file)
+- [whats that](https://rutgersdh.github.io/musicdh/data/)
+- [FMA: A Dataset For Music Analysis](https://github.com/mdeff/fma)
+- [musicNet dataset classical music](https://www.kaggle.com/datasets/imsparsh/musicnet-dataset/data)
+- 

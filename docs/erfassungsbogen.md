@@ -23,14 +23,15 @@ Der Zweck dieser Arbeit ist es zu untersuchen, wie man via Perturbationen die Ko
 
 ## **Zielsetzung**
 
-Das Hauptziel dieser Arbeit ist die Entwicklung und Explorierung von Methoden zur Generierung synthetischer Audiodaten. 
+Das Hauptziel dieser Arbeit ist die Entwicklung und Exploration von Methoden zur Generierung synthetischer Audiodaten. 
 Diese basieren auf einer datengetriebenen Analyse echter Live-Aufnahmen und weisen daher messbar realistische Live-Performance-Charakteristika auf.
 Aus einer einzelnen annotierten Aufnahme werden also künstliche, robuste Trainingsdatensätze mit realitätsnaher Varianz generiert.
+Nach aktueller Erkenntnis bestehen noch keine Metriken um die Authentizität von Live-Performances zu bewerten. Hier müsste also auch eine entsprechende Metrik entwickelt werden.
 
-Die Thesis soll im Wesentlichen drei Fragen in dieser Reihenfolge beantworten:
+Die Thesis soll im Wesentlichen drei Fragen beantworten:
 Wie unterscheiden sich verschiedene Live-Performances desselben Musikstücks in zeitlichen und spektralen Eigenschaften (Varianz)?
-Wie unterscheiden sich verschiedene Augmentationsansätze darin, realistische Live-Performance-Charakteristika zu generieren, welchen Einfluss haben sie auf die Qualität der erzeugten Daten? 
-Welche Ansätze können die statistischen Eigenschaften echter Live-Aufnahmen am besten reproduzieren?
+Wie unterscheiden sich verschiedene Augmentationsansätze darin, realistische Live-Performance-Charakteristika nachzustellen, welchen Einfluss haben sie auf die Qualität der erzeugten Daten? 
+Nach aktueller Erkenntnis existieren noch keine etablierten Metriken zur Bewertung der Authentizität von Live-Performances. Wie lässt sich eine geeignete Metrik zur Messung der "Authentizität" für diese Domäne definieren?
 
 
 
@@ -42,7 +43,8 @@ Für die Erstellung der künstlichen Datensätze wird eine modulare Pipeline ent
 Es gilt herauszufinden, welche Arten von Perturbationen und deren Intensitäten vorteilhaft für eine realistische Augmentation sind.
 Aufgrund des großen Hyperparameterraums werden für die Parameter-Optimierung wissenschaftlich fundierte Methoden hinsichtlich ihrer Eignung untersucht und evaluiert.
 Die Bewertung der Ergebnisse erfolgt primär durch Vergleich der Feature-Verteilungen zwischen augmentierten und echten Live-Aufnahmen.
-Ergänzend können weitere Metriken hinzugenommen werden, um die erzeugten Datensätze aus mehreren Perspektiven zu bewerten.
+Es wird eine generalisierende Evaluationsmetrik aufbauend auf bestehender Ansätze (KAD/FAD) entwickelt, um die Authentizität von Live-Performances zu messen.
+Diese Metrik könnte infolge auch genutzt werden, um die augmentierten Audiodaten zu validieren.
 
 
 ## **Ergebnisvereinbarung**

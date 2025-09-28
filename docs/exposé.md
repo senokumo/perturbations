@@ -82,7 +82,7 @@ Hier bietet sich die intrinsische Bewertung der Features der augmentierten Daten
 
 Je nach Bedarf können weitere Metriken hinzugenommen werden, um die erzeugten Datensätze aus mehreren Perspektiven zu bewerten. Die Wahl der konkreten Bewertungsmetriken wird also während des Arbeitsverlaufs stattfinden.
 
-Die augmentierten Daten werden mit einer Baseline (Originaldaten, Random/Naive Augmentation, ..) verglichen.
+Die augmentierten Daten werden mit einer Baseline (Originaldaten, vorherige Pipeline Prototypen Implementierungen, Ablation, Random/Naive Augmentation, ..) verglichen.
 Auch muss geprüft werden, ob die Annotationen der künstlichen Daten korrekt sind.
 
 

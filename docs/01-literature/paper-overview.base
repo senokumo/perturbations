@@ -1,0 +1,38 @@
+formulas:
+  Untitled: ""
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.folder == "01-literature/summaries"
+    order:
+      - file.name
+      - title
+      - year
+      - authors
+      - tags
+      - link
+      - relevance
+    sort:
+      - property: formula.Untitled
+        direction: DESC
+      - property: authors
+        direction: DESC
+    columnSize:
+      note.title: 443
+      note.authors: 92
+      note.link: 200
+  - type: table
+    name: View
+    filters:
+      and:
+        - file.folder == "01-literature/summaries"
+    order:
+      - file.name
+  - type: cards
+    name: View 2
+    image: note.title
+    imageFit: ""
+    imageAspectRatio: 0.25
+    cardSize: 290

@@ -1,0 +1,28 @@
+---
+title: "An Analysis of the Effect of Data Augmentation Methods: Experiments for a Musical Genre Classification Task"
+authors: Rémi Mignot, Geoffroy Peeters
+year: "2019"
+link: https://transactions.ismir.net/articles/10.5334/tismir.26
+tags:
+  - "#augmentation"
+relevance:
+---
+
+## Abstract //todo shorten to summary!
+Supervised machine learning relies on the accessibility of large datasets of annotated data. This is essential since small datasets generally lead to overfitting when training high-dimensional machine-learning models. Since the manual annotation of such large datasets is a long, tedious and expensive process, another possibility is to artificially increase the size of the dataset. This is known as data augmentation. In this paper we provide an in-depth analysis of two data augmentation methods: sound transformations and sound segmentation. The first transforms a music track to a set of new music tracks by applying processes such as pitch-shifting, time-stretching or filtering. The second one splits a long sound signal into a set of shorter time segments. We study the effect of these two techniques (and the parameters of those) for a genre classification task using public datasets. The main contribution of this work is to detail by experimentation the benefit of these methods, used alone or together, during training and/or testing. We also demonstrate their use in improving the robustness of potentially unknown sound degradations. By analyzing these results, good practice recommendations are provided.
+
+
+## Summary
+
+
+## Quintessence
+
+
+## 🛠️ Methods
+- **Data:**  
+- **Augmentations:**  
+- **Features/Models:**  
+
+
+## Takeaways for me
+

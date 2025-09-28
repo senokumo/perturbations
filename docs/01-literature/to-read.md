@@ -11,9 +11,9 @@
 - [SpecAugment: Speech Data Augmentation](https://arxiv.org/abs/1904.08779)
 - [SpecAugment++](https://arxiv.org/abs/2103.16858)
 - [Real World Music Object Recognition -> (i)](https://transactions.ismir.net/articles/10.5334/tismir.157)
-- 
+- [Open-Amp: Synthetic Data Framework for Audio Effect Foundation Models](https://arxiv.org/html/2411.14972v1)
 
-## Cue Detection/MIR
+## Music Information Retrieval (MIR)
 - [Real-Time Beat Tracking System](https://transactions.ismir.net/articles/10.5334/tismir.189)
 
 
@@ -30,5 +30,7 @@
 
 ## Evaluation
 - [Fréchet Audio Distance](https://www.isca-archive.org/interspeech_2019/kilgour19_interspeech.html)
+- [kernel audio distance](https://arxiv.org/html/2502.15602v1)
 - [Audio-Based Content Evaluation using MFCC, Chroma, Spectral Contrast](https://arxiv.org/html/2411.00195)
+- [EVALUATING GENERATIVE AUDIO SYSTEMS AND THEIR METRICS](https://archives.ismir.net/ismir2022/paper/000103.pdf)
 

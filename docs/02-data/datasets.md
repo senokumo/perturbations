@@ -8,4 +8,5 @@
 - [whats that](https://rutgersdh.github.io/musicdh/data/)
 - [FMA: A Dataset For Music Analysis](https://github.com/mdeff/fma)
 - [musicNet dataset classical music](https://www.kaggle.com/datasets/imsparsh/musicnet-dataset/data)
-- 
+- https://github.com/grateful-dead-live/fifteen-songs-dataset !!!
+  paper: https://archives.ismir.net/ismir2020/paper/000044.pdf

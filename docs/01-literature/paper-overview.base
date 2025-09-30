@@ -6,6 +6,7 @@ views:
     filters:
       and:
         - file.folder == "01-literature/summaries"
+        - title.contains("augmentation")
     order:
       - file.name
       - title

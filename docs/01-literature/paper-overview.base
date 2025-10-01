@@ -6,7 +6,6 @@ views:
     filters:
       and:
         - file.folder == "01-literature/summaries"
-        - title.contains("augmentation")
     order:
       - file.name
       - title
@@ -16,6 +15,10 @@ views:
       - link
       - relevance
     sort:
+      - property: year
+        direction: DESC
+      - property: title
+        direction: ASC
       - property: formula.Untitled
         direction: DESC
       - property: authors

@@ -1,7 +1,7 @@
 ---
 title: Adapting Frechet Audio Distance for Generative Music Evaluation
 authors: Azalea Gui, Hannes Gamper, Sebastian Braun, Dimitra Emmanouilidou
-year: "202"
+year: "2024"
 link:
   - https://www.researchgate.net/publication/379817367_Adapting_Frechet_Audio_Distance_for_Generative_Music_Evaluation
 tags:

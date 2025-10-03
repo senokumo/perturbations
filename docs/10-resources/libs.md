@@ -5,6 +5,8 @@
 - pedalboard
 - [beatnet](https://github.com/mjhydri/BeatNet)
 - [frechet audio](https://github.com/microsoft/fadtk)
+- essentia
+- aubio
 
 ## general
 - numpy - Basis (Datenstrukturen, numerische Berechnungen)

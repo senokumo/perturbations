@@ -24,9 +24,10 @@ Der Zweck dieser Arbeit ist es zu untersuchen, wie man via Perturbationen die Ko
 
 ## **Zielsetzung**
 
-Die Thesis soll im Wesentlichen drei Fragen beantworten:
+Die Thesis soll im Wesentlichen vier Fragen beantworten:
 Wie unterscheiden sich verschiedene Live-Performances desselben Musikstücks in zeitlichen und spektralen Eigenschaften (Varianz)?
 Wie unterscheiden sich verschiedene Augmentationsansätze darin, realistische Live-Performance-Charakteristika nachzustellen, welchen Einfluss haben sie auf die Qualität der erzeugten Daten? 
+Zeigen strukturelle Sektionen über verschiedene Songs hinweg ähnliche Feature-Eigenschaften?
 Wie lässt sich eine geeignete Bewertungsmetrik für die Authentizität von Live-Performances auf Basis bestehender Metriken entwickeln?
 
 Das Hauptziel der Arbeit ist die Entwicklung und Exploration von Methoden zur Generierung synthetischer Audiodaten. 

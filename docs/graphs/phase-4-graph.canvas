@@ -20,19 +20,20 @@
 		{"id":"cc5e563f3bc4fd45","type":"text","text":"# Phase 2","x":1699,"y":413,"width":250,"height":60,"color":"5"},
 		{"id":"f81ba234f5f3bc2e","type":"text","text":"## ...","x":273,"y":-198,"width":420,"height":60,"color":"2"},
 		{"id":"dd9ae638e1c34806","type":"text","text":"## correlation matrix $\\Sigma$ augmented data features\n\n|               | feature 1 | feature 2 | ... | feature n |\n| :-----------: | :-------: | :-------: | :-: | :-------: |\n| **feature 1** |     1     |     a     |  b  |     c     |\n| **feature 2** |           |     1     |  d  |     e     |\n|      ...      |           |           |  1  |     f     |\n| **feature n** |           |           |     |     1     |\n","x":251,"y":-892,"width":733,"height":271,"color":"2"},
-		{"id":"121fc907c2e6946b","type":"text","text":"# objective($\\theta$) -> distance(augmented, real)","x":251,"y":383,"width":464,"height":121,"color":"#ffffff"},
-		{"id":"680520c11a1a3f64","type":"text","text":"# proposed Parameter Vector $\\theta_{new}$","x":-967,"y":414,"width":520,"height":60,"color":"3"},
 		{"id":"a0d43c2e9effc418","type":"text","text":"# augmented recording 1\n### modified cue annotations 1","x":-1928,"y":-525,"width":460,"height":117,"color":"2"},
 		{"id":"7c4f51cbb05e19a2","type":"text","text":"# augmented recording 2\n### modified cue annotations 2","x":-1928,"y":-344,"width":460,"height":117,"color":"2"},
 		{"id":"dc5574970253ff7e","type":"text","text":"# ...","x":-1928,"y":-175,"width":460,"height":117,"color":"2"},
 		{"id":"2eed325ed5f4713c","type":"text","text":"### 1 Feature Extraction","x":-967,"y":-473,"width":290,"height":63,"color":"4"},
 		{"id":"5e0f5c10456b42d3","type":"text","text":"### 2 Feature Aggregation","x":-861,"y":-378,"width":367,"height":63,"color":"4"},
-		{"id":"d032152f1a02f117","type":"text","text":"# Phase 3: Perturb-Pipeline","x":-1845,"y":1180,"width":296,"height":104,"color":"3"},
-		{"id":"0ba39042d0f3121d","type":"text","text":"# Perturbation Parameter Vector $\\theta$","x":-1955,"y":414,"width":518,"height":60,"color":"3"},
-		{"id":"7fe5af0545a023af","type":"text","text":"# BO random proposal (i = 0)","x":-1925,"y":880,"width":457,"height":60,"color":"#ffffff"},
 		{"id":"1662cd1e06fdbe09","type":"text","text":"### 3 Feature Normalization","x":-677,"y":-273,"width":329,"height":63,"color":"4"},
 		{"id":"d534bb8ea21b1ee4","type":"text","text":"### 4 Distribution Fitting","x":-495,"y":-173,"width":288,"height":63,"color":"4"},
-		{"id":"ad7f4bab832393bf","type":"text","text":"# Akin Phase 2!","x":-367,"y":-533,"width":280,"height":60,"color":"5"}
+		{"id":"ad7f4bab832393bf","type":"text","text":"# Akin Phase 2!","x":-367,"y":-533,"width":280,"height":60,"color":"5"},
+		{"id":"78e62c1ad74ce633","type":"text","text":"# BO update ($\\theta_i$, distance$_i$)","x":251,"y":594,"width":464,"height":60,"color":"#ffffff"},
+		{"id":"0ba39042d0f3121d","type":"text","text":"# Perturbation Parameter Vector $\\theta_i$","x":-1965,"y":594,"width":535,"height":60,"color":"3"},
+		{"id":"680520c11a1a3f64","type":"text","text":"# proposed Parameter Vector $\\theta_{new}$","x":-977,"y":594,"width":520,"height":60,"color":"3"},
+		{"id":"d032152f1a02f117","type":"text","text":"# Phase 3: Perturb-Pipeline","x":-1845,"y":1180,"width":296,"height":104,"color":"3"},
+		{"id":"7fe5af0545a023af","type":"text","text":"# BO random proposal (i = 0)","x":-1926,"y":960,"width":457,"height":60,"color":"#ffffff"},
+		{"id":"121fc907c2e6946b","type":"text","text":"# objective($\\theta_i$) -> \n# distance$_i$(augmented, real)","x":251,"y":228,"width":464,"height":121,"color":"#ffffff"}
 	],
 	"edges":[
 		{"id":"97c86d7bb64c6ba9","fromNode":"84732ba835bdf4ec","fromSide":"right","toNode":"ddeacedc40f25ba6","toSide":"left","color":"2","label":"fit"},
@@ -47,8 +48,9 @@
 		{"id":"72d13238be1d626c","fromNode":"9e6a1c7bb00c917b","fromSide":"right","toNode":"1b9af5be7322a019","toSide":"left","color":"1","label":"audio\ninput"},
 		{"id":"2b955110a0cda41b","fromNode":"7fe5af0545a023af","fromSide":"top","toNode":"0ba39042d0f3121d","toSide":"bottom","label":"propose\ni = 0"},
 		{"id":"2faffeff58e63f5d","fromNode":"d032152f1a02f117","fromSide":"top","toNode":"7fe5af0545a023af","toSide":"bottom"},
-		{"id":"3e504c55ac4b89b0","fromNode":"121fc907c2e6946b","fromSide":"left","toNode":"680520c11a1a3f64","toSide":"right","color":"#ffffff","label":"propose\nfor\ni = 1 to\nn - 1"},
+		{"id":"3e504c55ac4b89b0","fromNode":"78e62c1ad74ce633","fromSide":"left","toNode":"680520c11a1a3f64","toSide":"right","color":"#ffffff","label":"propose\nfor\ni = 1 to\nn - 1"},
 		{"id":"388284e9c29cc6f7","fromNode":"0ba39042d0f3121d","fromSide":"left","toNode":"caeb2254882262eb","toSide":"bottom","color":"3"},
-		{"id":"5d3cc750dff4a35f","fromNode":"680520c11a1a3f64","fromSide":"left","toNode":"0ba39042d0f3121d","toSide":"right","color":"#ffffff","label":"update "}
+		{"id":"5d3cc750dff4a35f","fromNode":"680520c11a1a3f64","fromSide":"left","toNode":"0ba39042d0f3121d","toSide":"right","color":"#ffffff","label":"update vector"},
+		{"id":"829c7c71696639a9","fromNode":"121fc907c2e6946b","fromSide":"bottom","toNode":"78e62c1ad74ce633","toSide":"top","color":"#ffffff","label":"update\nBO context"}
 	]
 }

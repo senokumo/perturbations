@@ -9,7 +9,6 @@
 		{"id":"b583dc1be4a34777","type":"text","text":"## [[feature-distributions|Distribution]] Feature $X_2$","x":273,"y":-362,"width":420,"height":60,"color":"2"},
 		{"id":"1b9af5be7322a019","type":"text","text":"# Composable Perturbation Pipeline","x":-2960,"y":-317,"width":689,"height":63,"color":"3"},
 		{"id":"048be076ffd33ed1","type":"text","text":"# Gaussian Copula\n","x":-2740,"y":-845,"width":250,"height":104,"color":"6"},
-		{"id":"caeb2254882262eb","type":"text","text":"# Updated Perturbation Parameters\n","x":-2835,"y":35,"width":440,"height":104,"color":"3"},
 		{"id":"0ae1e8da92acdf38","type":"text","text":"## [[feature-distributions|Distribution]] Feature $X_3$","x":273,"y":-280,"width":420,"height":60,"color":"2"},
 		{"id":"78f8da89bd108e7b","type":"text","text":"# studio recording","x":-3668,"y":-356,"width":414,"height":63,"color":"1"},
 		{"id":"cefb5189b12d4d83","type":"text","text":"## Cue Annotations","x":-3596,"y":-274,"width":269,"height":60,"color":"1"},
@@ -29,11 +28,12 @@
 		{"id":"d534bb8ea21b1ee4","type":"text","text":"### 4 Distribution Fitting","x":-495,"y":-173,"width":288,"height":63,"color":"4"},
 		{"id":"ad7f4bab832393bf","type":"text","text":"# Akin Phase 2!","x":-367,"y":-533,"width":280,"height":60,"color":"5"},
 		{"id":"78e62c1ad74ce633","type":"text","text":"# BO update ($\\theta_i$, distance$_i$)","x":251,"y":594,"width":464,"height":60,"color":"#ffffff"},
-		{"id":"0ba39042d0f3121d","type":"text","text":"# Perturbation Parameter Vector $\\theta_i$","x":-1965,"y":594,"width":535,"height":60,"color":"3"},
 		{"id":"680520c11a1a3f64","type":"text","text":"# proposed Parameter Vector $\\theta_{new}$","x":-977,"y":594,"width":520,"height":60,"color":"3"},
-		{"id":"d032152f1a02f117","type":"text","text":"# Phase 3: Perturb-Pipeline","x":-1845,"y":1180,"width":296,"height":104,"color":"3"},
-		{"id":"7fe5af0545a023af","type":"text","text":"# BO random proposal (i = 0)","x":-1926,"y":960,"width":457,"height":60,"color":"#ffffff"},
-		{"id":"121fc907c2e6946b","type":"text","text":"# objective($\\theta_i$) -> \n# distance$_i$(augmented, real)","x":251,"y":228,"width":464,"height":121,"color":"#ffffff"}
+		{"id":"121fc907c2e6946b","type":"text","text":"# objective($\\theta_i$) -> \n# distance$_i$(augmented, real)","x":251,"y":228,"width":464,"height":121,"color":"#ffffff"},
+		{"id":"0ba39042d0f3121d","type":"text","text":"# Perturbation Parameter Vector $\\theta_i$","x":-2882,"y":594,"width":535,"height":60,"color":"3"},
+		{"id":"d032152f1a02f117","type":"text","text":"# Phase 3: Perturb-Pipeline","x":-2762,"y":1180,"width":296,"height":104,"color":"3"},
+		{"id":"7fe5af0545a023af","type":"text","text":"# BO random proposal (i = 0)","x":-2843,"y":960,"width":457,"height":60,"color":"#ffffff"},
+		{"id":"caeb2254882262eb","type":"text","text":"# Perturbation Parameters\n","x":-2835,"y":120,"width":440,"height":60,"color":"3"}
 	],
 	"edges":[
 		{"id":"97c86d7bb64c6ba9","fromNode":"84732ba835bdf4ec","fromSide":"right","toNode":"ddeacedc40f25ba6","toSide":"left","color":"2","label":"fit"},
@@ -49,7 +49,7 @@
 		{"id":"2b955110a0cda41b","fromNode":"7fe5af0545a023af","fromSide":"top","toNode":"0ba39042d0f3121d","toSide":"bottom","label":"propose\ni = 0"},
 		{"id":"2faffeff58e63f5d","fromNode":"d032152f1a02f117","fromSide":"top","toNode":"7fe5af0545a023af","toSide":"bottom"},
 		{"id":"3e504c55ac4b89b0","fromNode":"78e62c1ad74ce633","fromSide":"left","toNode":"680520c11a1a3f64","toSide":"right","color":"#ffffff","label":"propose\nfor\ni = 1 to\nn - 1"},
-		{"id":"388284e9c29cc6f7","fromNode":"0ba39042d0f3121d","fromSide":"left","toNode":"caeb2254882262eb","toSide":"bottom","color":"3"},
+		{"id":"388284e9c29cc6f7","fromNode":"0ba39042d0f3121d","fromSide":"top","toNode":"caeb2254882262eb","toSide":"bottom","color":"3"},
 		{"id":"5d3cc750dff4a35f","fromNode":"680520c11a1a3f64","fromSide":"left","toNode":"0ba39042d0f3121d","toSide":"right","color":"#ffffff","label":"update vector"},
 		{"id":"829c7c71696639a9","fromNode":"121fc907c2e6946b","fromSide":"bottom","toNode":"78e62c1ad74ce633","toSide":"top","color":"#ffffff","label":"update\nBO context"}
 	]

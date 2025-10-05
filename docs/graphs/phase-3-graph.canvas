@@ -12,7 +12,8 @@
 		{"id":"1d2e2641d3b30338","type":"text","text":"# augmented recording 2\n### modified cue annotations 2","x":-701,"y":-372,"width":460,"height":117,"color":"2"},
 		{"id":"d7b69d51ccd57de2","type":"text","text":"# ...","x":-701,"y":-203,"width":460,"height":117,"color":"2"},
 		{"id":"d2070aaab3c1726e","type":"text","text":"# Phase 4: Optimization","x":160,"y":-372,"width":296,"height":104,"color":"#ffffff"},
-		{"id":"7301a4c23853c279","type":"text","text":"# Gaussian Copula\n","x":-1586,"y":-1080,"width":250,"height":104,"color":"6"}
+		{"id":"7301a4c23853c279","type":"text","text":"# Gaussian Copula\n","x":-1586,"y":-1080,"width":250,"height":104,"color":"6"},
+		{"id":"8cf054104b3fb8a7","x":-2040,"y":-660,"width":397,"height":233,"type":"text","text":"```\npipeline(\n\taudio, \n\ttarget,\n\tperturb_functions,\n\tperturb_params,\n)\n\n```"}
 	],
 	"edges":[
 		{"id":"93952d2dde13492d","fromNode":"0ca3c6be7a28b222","fromSide":"right","toNode":"2e7258399818f612","toSide":"left","color":"3","label":"output"},

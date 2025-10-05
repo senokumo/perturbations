@@ -1,0 +1,26 @@
+{
+	"nodes":[
+		{"id":"2e7258399818f612","type":"group","x":-721,"y":-573,"width":500,"height":507,"label":"augmented dataset"},
+		{"id":"edffffdce99d1eb0","type":"group","x":-2637,"y":-410,"width":454,"height":182,"label":"original audio"},
+		{"id":"3b6b55cde35ec098","type":"text","text":"# augmented recording 1\n### modified cue annotations 1","x":-701,"y":-553,"width":460,"height":117,"color":"2"},
+		{"id":"0ca3c6be7a28b222","type":"text","text":"# Composable Perturbation Pipeline","x":-1806,"y":-352,"width":689,"height":63,"color":"3"},
+		{"id":"b28dc2b2298eb6d8","type":"text","text":"# single (studio) recording","x":-2617,"y":-390,"width":414,"height":63,"color":"1"},
+		{"id":"6137e459cfc75ae0","type":"text","text":"## Cue Annotations","x":-2545,"y":-308,"width":269,"height":60,"color":"1"},
+		{"id":"8ab8209fb622d142","type":"text","text":"# Perturbation Parameters\n","x":-1320,"y":2,"width":440,"height":63,"color":"3"},
+		{"id":"d7ffd36a869f5b89","type":"text","text":"# Perturbation Functions","x":-1940,"y":2,"width":400,"height":63,"color":"3"},
+		{"id":"512028f5c25449ab","type":"text","text":"# Phase 2","x":-1586,"y":-1240,"width":250,"height":60,"color":"5"},
+		{"id":"1d2e2641d3b30338","type":"text","text":"# augmented recording 2\n### modified cue annotations 2","x":-701,"y":-372,"width":460,"height":117,"color":"2"},
+		{"id":"d7b69d51ccd57de2","type":"text","text":"# ...","x":-701,"y":-203,"width":460,"height":117,"color":"2"},
+		{"id":"d2070aaab3c1726e","type":"text","text":"# Phase 4: Optimization","x":160,"y":-372,"width":296,"height":104,"color":"#ffffff"},
+		{"id":"7301a4c23853c279","type":"text","text":"# Gaussian Copula\n","x":-1586,"y":-1080,"width":250,"height":104,"color":"6"}
+	],
+	"edges":[
+		{"id":"93952d2dde13492d","fromNode":"0ca3c6be7a28b222","fromSide":"right","toNode":"2e7258399818f612","toSide":"left","color":"3","label":"output"},
+		{"id":"5000934105ef608b","fromNode":"edffffdce99d1eb0","fromSide":"right","toNode":"0ca3c6be7a28b222","toSide":"left","color":"1","label":"audio- \ninput"},
+		{"id":"a210a4de7c8d1e47","fromNode":"8ab8209fb622d142","fromSide":"top","toNode":"0ca3c6be7a28b222","toSide":"bottom","color":"3","label":"parameter\ninput"},
+		{"id":"12435ca352bdba56","fromNode":"7301a4c23853c279","fromSide":"bottom","toNode":"0ca3c6be7a28b222","toSide":"top","color":"6","label":"target input\n"},
+		{"id":"654d9c7e0d391c6d","fromNode":"d7ffd36a869f5b89","fromSide":"top","toNode":"0ca3c6be7a28b222","toSide":"bottom","color":"3","label":"perturbation\ninput"},
+		{"id":"7477d14247c2418d","fromNode":"512028f5c25449ab","fromSide":"bottom","toNode":"7301a4c23853c279","toSide":"top","color":"5"},
+		{"id":"f7764394ac325c02","fromNode":"2e7258399818f612","fromSide":"right","toNode":"d2070aaab3c1726e","toSide":"left","color":"2"}
+	]
+}

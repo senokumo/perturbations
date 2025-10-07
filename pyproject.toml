@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "essentia>=2.1b6.dev1389",
     "internetarchive>=5.5.1",
     "ipykernel>=6.30.1",
     "librosa>=0.11.0",

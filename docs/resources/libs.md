@@ -11,6 +11,7 @@
 - pyo (-> lfo)
 - supercollider (lfo)
 - audioFlux
+- torchaudio
 
 ## audio perturbation
 - audiomentations

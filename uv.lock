@@ -25,6 +25,20 @@ wheels = [
 ]
 
 [[package]]
+name = "audioflux"
+version = "0.1.9"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "matplotlib" },
+    { name = "numpy" },
+    { name = "scipy" },
+    { name = "soundfile" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/be/a6/f54fdbaaa8c5600afd8a47e4185178c688e8af55f5c455aa8f777aab8c36/audioflux-0.1.9-py3-none-any.whl", hash = "sha256:c4b2d9d72dffb36a1d74e0894d3ea958c5195a7e05ebe779e972c97d593df3c2", size = 70773222, upload-time = "2024-05-24T09:46:01.123Z" },
+]
+
+[[package]]
 name = "audioop-lts"
 version = "0.2.2"
 source = { registry = "https://pypi.org/simple" }
@@ -973,6 +987,7 @@ name = "perturb"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "audioflux" },
     { name = "essentia" },
     { name = "internetarchive" },
     { name = "ipykernel" },
@@ -990,6 +1005,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "audioflux", specifier = ">=0.1.9" },
     { name = "essentia", specifier = ">=2.1b6.dev1389" },
     { name = "internetarchive", specifier = ">=5.5.1" },
     { name = "ipykernel", specifier = ">=6.30.1" },

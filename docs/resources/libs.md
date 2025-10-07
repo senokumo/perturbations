@@ -1,19 +1,23 @@
-## audio
+## audio analysis
 - librosa
 - madmom 
-- audiomentations
-- pedalboard
 - [beatnet](https://github.com/mjhydri/BeatNet)
 - [frechet audio](https://github.com/microsoft/fadtk)
 - essentia
 - aubio
-- pyrubberband
 - soundfile
 - pydub
 - scipy.signal
 - pyo (-> lfo)
 - supercollider (lfo)
+- audioFlux
 
+## audio perturbation
+- audiomentations
+- pedalboard
+- pyrubberband
+- [pytsmod (timestretch)](https://github.com/KAIST-MACLab/PyTSMod)
+- 
 ## general
 - numpy - Basis (Datenstrukturen, numerische Berechnungen)
 - matplotlib - basic plotting

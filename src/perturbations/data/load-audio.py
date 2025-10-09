@@ -31,7 +31,3 @@ def load_metadata(audio_path):
     print(f"failed to load metadata from {audio_path}: {e}")
     return None
 
-
-metadata = load_from_directory(SONG1_DIR, load_metadata)
-
-print(metadata)

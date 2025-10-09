@@ -18,7 +18,7 @@
 - pedalboard
 - pyrubberband
 - [pytsmod (timestretch)](https://github.com/KAIST-MACLab/PyTSMod)
-- 
+- dtw-python
 ## general
 - numpy - Basis (Datenstrukturen, numerische Berechnungen)
 - matplotlib - basic plotting

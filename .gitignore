@@ -1,2 +1,5 @@
 notebooks/
 src/perturb.egg-info
+
+__pycache__/
+*.pyc

@@ -16,15 +16,15 @@ W_RAF = 'ween_rosesarefree'
 # dataclasses
 
 @dataclass(frozen=True)
-class Directory:
-  ROOT = Path(__file__).resolve() # .parent.parent.parent
+class AudioDir:
+  ROOT = Path(__file__).resolve().parent.parent.parent
   AUDIO_DIR = ROOT / 'audio'
 
   @staticmethod
-  def song_dir(performance):
-      return Directory.AUDIO_DIR / performance / 'raw'
+  def get_song(performance):
+      return AudioDir.AUDIO_DIR / performance / 'raw'
 
 
 # test
-perf_dir = Directory.AUDIO_DIR
+perf_dir = AudioDir.AUDIO_DIR
 print(perf_dir)

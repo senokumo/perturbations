@@ -5,11 +5,11 @@ from pathlib import Path
 # constants
 
 ## audio extraction config
-FILE_FORMAT = '*.flac'
-SAMPLE_RATE = 22050
+FILE_FORMAT: str = '*.flac'
+SAMPLE_RATE: int = 22050
 
 ## song names
-W_RAF = 'ween_rosesarefree'
+W_RAF: str = 'ween_rosesarefree'
 
 
 
@@ -17,12 +17,12 @@ W_RAF = 'ween_rosesarefree'
 
 @dataclass(frozen=True)
 class AudioDir:
-  ROOT = Path(__file__).resolve().parent.parent.parent
-  AUDIO_DIR = ROOT / 'audio'
+  ROOT: Path = Path(__file__).resolve().parent.parent.parent
+  AUDIO_DIR: Path = ROOT / 'audio'
 
   @staticmethod
-  def get_song(performance):
-      return AudioDir.AUDIO_DIR / performance / 'raw'
+  def get_song(song: str) -> Path:
+      return AudioDir.AUDIO_DIR / song / 'raw'
 
 
 # test

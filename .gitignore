@@ -3,3 +3,5 @@ src/perturb.egg-info
 
 __pycache__/
 *.pyc
+
+logs/

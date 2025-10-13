@@ -21,8 +21,12 @@ class AudioDir:
   AUDIO_DIR: Path = ROOT / 'audio'
 
   @staticmethod
-  def get_song(song: str) -> Path:
-      return AudioDir.AUDIO_DIR / song / 'raw'
+  def get_song_raw(song: str) -> Path:
+    return AudioDir.AUDIO_DIR / song / 'raw'
+  
+  @staticmethod
+  def get_song_saved(song: str) -> Path:
+    return AudioDir.AUDIO_DIR / song / 'saved'
 
 
 # test

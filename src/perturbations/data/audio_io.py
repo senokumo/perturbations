@@ -69,15 +69,35 @@ def save_performances(
   for key, val in performances.items():
     np.savez(save_path / key, audio=val)
 
+def save_audio(
+    audio: np.typing.NDArray,
+    save_path: Path = AudioDir.get_song_saved('test')
+):
+  np.savetxt(save_path, audio)
 
-def get_saved_performances() -> dict[str, np.typing.NDArray]:
+def get_saved_audio(
+    save_path: Path = AudioDir.get_song_saved('test')
+):
+  audio = np.load('audio/test/saved.npz')
+  return audio
+
+
+def get_saved_performances(
+    dir: Path = AudioDir.get_song_saved(W_RAF)
+) -> dict[str, np.typing.NDArray]:
     performances = {}
-    for file_path in AudioDir.get_song_saved(W_RAF).glob("*.npz"):
-        data = np.load(file_path)
-        performances[file_path.name] = data['audio']
+    for file_path in dir.glob("*.npz"):
+        perf = np.load(file_path)
+        performances[file_path.name] = perf['audio']
     return performances
 
 
+def get_song_to_test() -> np.typing.NDArray:
+  audio = MonoLoader(
+    filename='/home/toni/projects/perturb/audio/ween_rosesarefree/raw/1-31-2008 Part_0108.flac', 
+    sampleRate=SAMPLE_RATE
+  )()
+  return audio
 
 # test
 

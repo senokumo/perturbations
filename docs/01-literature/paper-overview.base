@@ -15,6 +15,8 @@ views:
       - link
       - relevance
     sort:
+      - property: tags
+        direction: ASC
       - property: year
         direction: DESC
       - property: title
@@ -24,7 +26,7 @@ views:
       - property: authors
         direction: DESC
     columnSize:
-      note.title: 443
+      note.title: 813
       note.authors: 92
       note.link: 200
   - type: table

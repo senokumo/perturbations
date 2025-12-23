@@ -6,11 +6,13 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "audioflux>=0.1.9",
+    "cython>=3.2.1",
     "essentia>=2.1b6.dev1389",
     "internetarchive>=5.5.1",
     "ipykernel>=6.30.1",
     "librosa>=0.11.0",
     "matplotlib>=3.10.6",
+    "mido>=1.3.3",
     "mypy>=1.18.2",
     "numpy>=2.3.3",
     "pandas>=2.3.2",

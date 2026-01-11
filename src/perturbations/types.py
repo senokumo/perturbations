@@ -1,20 +1,24 @@
 from dataclasses import dataclass
 import numpy as np
-from typing import List, TypedDict
-
+from numpy.typing import NDArray
+from typing import List
 from perturbations.consts import SAMPLE_RATE
 
-
-
-@dataclass(frozen=True)
+@dataclass
 class AudioData:
-  samples: np.typing.NDArray
-  sample_rate: int = SAMPLE_RATE
+    samples: NDArray
+    sample_rate: int = SAMPLE_RATE
 
 @dataclass(frozen=True)
 class Rhythm:
-  bpm: float
-  beats: List[float]
-  beats_confidence: List[float] # or just float?
-  beats_estimate: List[float]
-  beats_intervals: List[float]
+    bpm: float
+    beats: NDArray
+    beats_confidence: NDArray
+    beats_estimate: NDArray
+    beats_intervals: NDArray
+
+@dataclass
+class Performance:
+    filename: str
+    audio: NDArray
+    rhythm_features: Rhythm

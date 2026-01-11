@@ -401,6 +401,15 @@ wheels = [
 ]
 
 [[package]]
+name = "fastdtw"
+version = "0.3.4"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/99/43/30f2d8db076f216b15c10db663b46e22d1750b1ebacd7af6e62b83d6ab98/fastdtw-0.3.4.tar.gz", hash = "sha256:2350fa6ec36bcad186eaf81f46eff35181baf04e324f522de8aeb43d0243f64f", size = 133402, upload-time = "2019-10-07T16:02:29.982Z" }
+
+[[package]]
 name = "fastjsonschema"
 version = "2.21.2"
 source = { registry = "https://pypi.org/simple" }
@@ -1104,6 +1113,7 @@ dependencies = [
     { name = "audioflux" },
     { name = "cython" },
     { name = "essentia" },
+    { name = "fastdtw" },
     { name = "internetarchive" },
     { name = "ipykernel" },
     { name = "librosa" },
@@ -1113,6 +1123,7 @@ dependencies = [
     { name = "nbstripout" },
     { name = "numpy" },
     { name = "pandas" },
+    { name = "pyrubberband" },
     { name = "pytest" },
     { name = "ruff" },
     { name = "scikit-learn" },
@@ -1125,6 +1136,7 @@ requires-dist = [
     { name = "audioflux", specifier = ">=0.1.9" },
     { name = "cython", specifier = ">=3.2.1" },
     { name = "essentia", specifier = ">=2.1b6.dev1389" },
+    { name = "fastdtw", specifier = ">=0.3.4" },
     { name = "internetarchive", specifier = ">=5.5.1" },
     { name = "ipykernel", specifier = ">=6.30.1" },
     { name = "librosa", specifier = ">=0.11.0" },
@@ -1134,6 +1146,7 @@ requires-dist = [
     { name = "nbstripout", specifier = ">=0.8.2" },
     { name = "numpy", specifier = ">=2.3.3" },
     { name = "pandas", specifier = ">=2.3.2" },
+    { name = "pyrubberband", specifier = ">=0.4.0" },
     { name = "pytest", specifier = ">=8.4.2" },
     { name = "ruff", specifier = ">=0.13.2" },
     { name = "scikit-learn", specifier = ">=1.7.2" },
@@ -1322,6 +1335,19 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/98/c9/b4594e6a81371dfa9eb7a2c110ad682acf985d96115ae8b25a1d63b4bf3b/pyparsing-3.2.4.tar.gz", hash = "sha256:fff89494f45559d0f2ce46613b419f632bbb6afbdaed49696d322bcf98a58e99", size = 1098809, upload-time = "2025-09-13T05:47:19.732Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/53/b8/fbab973592e23ae313042d450fc26fa24282ebffba21ba373786e1ce63b4/pyparsing-3.2.4-py3-none-any.whl", hash = "sha256:91d0fcde680d42cd031daf3a6ba20da3107e08a75de50da58360e7d94ab24d36", size = 113869, upload-time = "2025-09-13T05:47:17.863Z" },
+]
+
+[[package]]
+name = "pyrubberband"
+version = "0.4.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+    { name = "soundfile" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/b4/5f/e4e737a216c9327931cdee8ca2194c916ee8a1748a8c7c80d5d5a8368d81/pyrubberband-0.4.0.tar.gz", hash = "sha256:74707ec8ca6c6234e84ad2d9a4aa5c08a62fcfd83da011d535d41f4388ac49f7", size = 6416, upload-time = "2024-09-30T17:53:00.796Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d8/88/238aa67e353012d8dd999372aedada3f627bc9895d5d2a5305e7ffb1affd/pyrubberband-0.4.0-py3-none-any.whl", hash = "sha256:0a803191f38debbbdfd9135939c1f75999e98511f19867d357b84e191f139ca9", size = 4798, upload-time = "2024-09-30T17:52:59.621Z" },
 ]
 
 [[package]]

@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"793e346820c19f21","type":"text","text":"# Performances","x":-280,"y":-360,"width":484,"height":54},
+		{"id":"63d94c3730a53037","type":"text","text":"# SNRs","x":-280,"y":-120,"width":484,"height":54},
+		{"id":"7d1870bbf67b057a","type":"text","text":"# SNR Normal Distribution","x":-280,"y":140,"width":484,"height":54},
+		{"id":"abdccfcfe50ce728","type":"text","text":"# synthetic SNR target value","x":420,"y":140,"width":484,"height":54}
+	],
+	"edges":[
+		{"id":"1af48c7caa32d747","fromNode":"793e346820c19f21","fromSide":"bottom","toNode":"63d94c3730a53037","toSide":"top","label":"get"},
+		{"id":"90bfc741c96d38a7","fromNode":"63d94c3730a53037","fromSide":"bottom","toNode":"7d1870bbf67b057a","toSide":"top","label":"fit"},
+		{"id":"b1e7c0e17845766a","fromNode":"7d1870bbf67b057a","fromSide":"right","toNode":"abdccfcfe50ce728","toSide":"left","label":"sample"}
+	]
+}

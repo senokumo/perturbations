@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"942d7dc5c2b62047","type":"group","x":-800,"y":-260,"width":1320,"height":480,"label":"fit markov"},
+		{"id":"92881312629e2679","type":"text","text":"# Datadriven Statistical Time-Stretching","x":480,"y":-480,"width":484,"height":100,"color":"4"},
+		{"id":"3d1685e875fa9a87","type":"text","text":"# Discrete Bins & Bin Edges","x":-780,"y":0,"width":484,"height":54},
+		{"id":"66c864a0f3baee99","type":"text","text":"# Beat Transition Matrix\n### transition probabilities\n\n$$\nP = \\begin{array}{c|ccc}\n  & \\text{bin}_1 & \\text{bin}_2 & \\text{bin}_3 & \\dots \\\\\n\\hline\n\\text{bin}_1 & p_{1,1} & p_{1,2} & p_{1,3} \\\\\n\\text{bin}_2 & p_{2,1} & p_{2,2} & p_{2,3} \\\\\n\\text{bin}_3 & p_{3,1} & p_{3,2} & p_{3,3} \\\\\n\\dots\n\\end{array}\n$$","x":20,"y":-130,"width":469,"height":314},
+		{"id":"5bf2b4ffcf3863c5","type":"text","text":"# Beat Intervals","x":-780,"y":-184,"width":484,"height":54},
+		{"id":"7a8977a30fb84d0e","type":"text","text":"# Performances Beat Positions","x":-380,"y":-600,"width":484,"height":54},
+		{"id":"568b4a0894a0c3c0","type":"text","text":"# Get Beat Transition Matrix\n\n```python\nfit_markov(beats, number_bins) -> transition_matrix, bin_edges:\n\t\n\n```","x":618,"y":-179,"width":642,"height":519},
+		{"id":"63e38e34e8c738bd","type":"text","text":"# Get Beat Intervals\n\n```python\nget_intervals(performances):\n\tall_intervals = []\n\tfor performance in performances:\n\t\tintervals = np.diff(performance.beats)\n\t\tall_intervals.extend(intervals)\n\treturn all_intervals\n\t\n\n```","x":-1520,"y":-300,"width":642,"height":300},
+		{"id":"d4d157028193e40f","type":"text","text":"# create_synthetic_timemap(bin_edges, transition_matrix, duration, seed)","x":-600,"y":440,"width":918,"height":60},
+		{"id":"b126b67b6a8e3ade","type":"text","text":"# Get Bin Edges\n\n```python\nget_bin_edges(all_intervals, n_bins):\n\tedges = np.linspace(\n\t\tnp.percentile(all_intervals, 1), \n\t\tnp.percentile(all_intervals, 99), \n\t\tn_bins + 1\n\t)\n\treturn edges\n```","x":-1520,"y":54,"width":642,"height":300}
+	],
+	"edges":[
+		{"id":"fb87194257a44d69","fromNode":"7a8977a30fb84d0e","fromSide":"bottom","toNode":"5bf2b4ffcf3863c5","toSide":"top","label":"collect"},
+		{"id":"5eda2082190353cf","fromNode":"5bf2b4ffcf3863c5","fromSide":"bottom","toNode":"3d1685e875fa9a87","toSide":"top","label":"create"},
+		{"id":"f7743ecef2ebca74","fromNode":"3d1685e875fa9a87","fromSide":"right","toNode":"66c864a0f3baee99","toSide":"left"},
+		{"id":"02d42daf5e2376d4","fromNode":"7a8977a30fb84d0e","fromSide":"bottom","toNode":"66c864a0f3baee99","toSide":"top","label":"count transitions\n& normalize"},
+		{"id":"fef3013789626717","fromNode":"942d7dc5c2b62047","fromSide":"bottom","toNode":"d4d157028193e40f","toSide":"top","label":"sample markov"}
+	]
+}
